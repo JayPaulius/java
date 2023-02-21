@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 // Реализуйте pow(x, n) , который вычисляет xв степени n(т.е. ).xn
 
-public class Task1 {
+public class Task1_2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Введите число:");

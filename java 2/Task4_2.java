@@ -1,4 +1,4 @@
-public class Task4 {
+public class Task4_2 {
     public static void main(String[] args) {
         Vector vector1 = new Vector(5, 10, 15);
         Vector vector2 = new Vector(15, 5, 10);

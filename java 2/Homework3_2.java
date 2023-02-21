@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 // Дан массив целых чисел. Заменить отрицательные элементы на сумму индексов двузначных элементов массива.
 
-public class Homework3 {
+public class Homework3_2 {
     public static void main(String[] args) {
         int[] arr = getArray();
         printArray("Исходный массив:", arr);

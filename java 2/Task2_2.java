@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 // Дана последовательность из N целых чисел. Найти сумму чисел, оканчивающихся на 5, перед которыми идет четное число.
 
-public class Task2 {
+public class Task2_2 {
     public static void main(String[] args) {
         System.out.println(sum());
     }

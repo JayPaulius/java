@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 // Дана последовательность N целых чисел. Найти сумму простых чисел.
 
-public class Homework1 {
+public class Homework1_2 {
     public static void main(String[] args) {
         System.out.println("Сумма простых чисел: " + sum());
     }

@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 // Дана последовательность из N целых чисел. Верно ли, что последовательность является возрастающей.
 
-public class Homework2 {
+public class Homework2_2 {
     public static void main(String[] args) {
         System.out.println(seqCheck());
     }

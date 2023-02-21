@@ -1,6 +1,6 @@
 //  Дан массив целых чисел. Найти количество пар соседних элементов, где первый элемент вдвое больше второго.
 
-public class Task3 {
+public class Task3_2 {
     public static void main(String[] args) {
         int[] arr = {1, 2, 1, 10, 5, 3, 9, 1};
         int count = 0;
