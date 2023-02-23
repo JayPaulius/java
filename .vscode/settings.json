@@ -1,6 +1,7 @@
 {
     "java.project.referencedLibraries": [
         "lib/**/*.jar",
-        "d:\\Загрузки\\lombok-1.18.26.jar"
+        "d:\\Загрузки\\lombok-1.18.26.jar",
+        "d:\\Курсы\\GeekBrains\\Java\\lombok-1.18.26.jar"
     ]
 }

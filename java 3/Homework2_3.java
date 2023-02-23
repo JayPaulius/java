@@ -25,29 +25,21 @@ public class Homework2_3 {
         System.out.println("Введите сорт товара:");
         int grade = sc.nextInt();
         sc.close();
-        int[] arr = getFirstElementIndex(products, grade);
-        if (arr[0] == 1) {
-            int firstElementIndex = arr[1];
-            productsNamesMinPrice(products, grade, firstElementIndex);
+        int firstElementIndex = getFirstElementIndex(products, grade);
+        if (firstElementIndex != -1) {
+            int minPrice = getMinPrice(products, grade, firstElementIndex);
+            productsNamesMinPrice(products, grade, firstElementIndex, minPrice);
         } else {
             System.out.println("Сорт не найден");
         }
     }
 
-    private static int[] getFirstElementIndex(List<Class2> products, int grade) {
+    private static int getFirstElementIndex(List<Class2> products, int grade) {
         for (int i = 0; i < products.size(); i++) {
             if (products.get(i).getGrade() == grade)
-                return new int[] {1, i};
+                return i;
         }
-        return new int[] { 0 };
-    }
-
-    private static void productsNamesMinPrice(List<Class2> products, int grade, int firstElementIndex){
-        int minPrice = getMinPrice(products, grade, firstElementIndex);
-        for (int i = firstElementIndex; i < products.size(); i++) {
-            if (products.get(i).getGrade() == grade && products.get(i).getPrice() == minPrice)
-                System.out.println(products.get(i).getName());
-        }
+        return -1;
     }
 
     private static int getMinPrice(List<Class2> products, int grade, int firstElementIndex){
@@ -59,5 +51,13 @@ public class Homework2_3 {
             }
         }
         return minPrice;
+    }
+
+    private static void productsNamesMinPrice(List<Class2> products, int grade, int firstElementIndex, int minPrice){
+        for (int i = firstElementIndex; i < products.size(); i++) {
+            if (products.get(i).getGrade() == grade && 
+                products.get(i).getPrice() == minPrice)
+                System.out.println(products.get(i).getName());
+        }
     }
 }
