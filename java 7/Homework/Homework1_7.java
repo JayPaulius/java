@@ -11,8 +11,8 @@ import java.util.List;
 
 public class Homework1_7 {
     public static void main(String[] args) {
-        VendingMachineHotDrink HotDrinkMachine1 = new VendingMachineHotDrink();
-        VendingMachineHotDrink HotDrinkMachine2 = new VendingMachineHotDrink();
+        VendingMachine3 HotDrinkMachine1 = new VendingMachineHotDrink();
+        VendingMachine3 HotDrinkMachine2 = new VendingMachineHotDrink();
         
         List<ProductHotDrink> hotDrinkList1 = new ArrayList<>(Arrays.asList(
         new ProductHotDrink("чай", 150, 70),
@@ -23,8 +23,8 @@ public class Homework1_7 {
         new ProductHotDrink("чай", 150, 80), 
         new ProductHotDrink("кофе", 150, 70)));
 
-        HotDrinkMachine1.initProducts(hotDrinkList1);
-        HotDrinkMachine2.initProducts(hotDrinkList2);
+        ((VendingMachineHotDrink)HotDrinkMachine1).initProducts(hotDrinkList1);
+        ((VendingMachineHotDrink)HotDrinkMachine2).initProducts(hotDrinkList2);
 
         System.out.println(HotDrinkMachine1.getProduct("чай", 150, 70));
         System.out.println(HotDrinkMachine2.getProduct("вода", 250, 60));

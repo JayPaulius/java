@@ -19,6 +19,7 @@ public class VendingMachineHotDrink implements VendingMachine3 {
         return "напиток не найден";
     }
     
+    @Override
     public String getProduct(String name) {
         List<ProductHotDrink> hotDrinkList = new ArrayList<>();
         for (ProductHotDrink product : products) {
